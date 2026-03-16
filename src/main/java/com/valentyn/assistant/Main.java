@@ -4,8 +4,6 @@ import com.valentyn.assistant.core.AssistantApp;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Jarvis Assistant started");
-
         AssistantApp app = new AssistantApp();
         app.start();
     }

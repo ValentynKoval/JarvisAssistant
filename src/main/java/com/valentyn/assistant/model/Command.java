@@ -5,10 +5,12 @@ import com.valentyn.assistant.commands.CommandType;
 public class Command {
     private final CommandType type;
     private final String originalText;
+    private final String target;
 
-    public Command(CommandType type, String originalText) {
+    public Command(CommandType type, String originalText, String target) {
         this.type = type;
         this.originalText = originalText;
+        this.target = target;
     }
 
     public CommandType getType() {
@@ -17,5 +19,9 @@ public class Command {
 
     public String getOriginalText() {
         return originalText;
+    }
+
+    public String getTarget() {
+        return target;
     }
 }
